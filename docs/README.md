@@ -12,4 +12,4 @@ This "Whack-a-Mole"-style reaction game was originally developed for a class par
 
 The original classroom project report includes the schematic, hardware description, and explanation of the initial game logic.
 
-📄 [Original Whack-a-Mole Project Report](docs/Original_Project_Report.pdf)
+📄 [Original Whack-a-Mole Project Report](Original_Project_Report.pdf)
