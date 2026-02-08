@@ -7,3 +7,9 @@ This "Whack-a-Mole"-style reaction game was originally developed for a class par
 - Improve timing accuracy
 - Refactor code for maintainability
 - Document design decisions and debugging process
+
+## Original Project Documentation
+
+The original classroom project report includes the schematic, hardware description, and explanation of the initial game logic.
+
+📄 [Original Whack-a-Mole Project Report](docs/Original_Whack_a_Mole_Report.pdf)
