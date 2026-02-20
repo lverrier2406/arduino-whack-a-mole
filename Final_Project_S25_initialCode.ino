@@ -8,6 +8,8 @@ int LED1 = 8;
 int LED2 = 9;
 int LED3 = 10;  // New trap LED on pin 10
 
+int gameSpeed = 500; // game speed set to 0.5s LED flashes
+
 void setup() {
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
@@ -108,14 +110,14 @@ void light_LED(int LED_num) {
   if (LED_num == 1) {
     attachInterrupt(digitalPinToInterrupt(2), buttonPressed, RISING);
     digitalWrite(LED1, HIGH);
-    delay(500);  // LED stays on for 0.75 second
+    delay(gameSpeed);  // LED stays on for 0.75 second
     digitalWrite(LED1, LOW);
     detachInterrupt(digitalPinToInterrupt(2));
   } 
   else if (LED_num == 2) {
     attachInterrupt(digitalPinToInterrupt(3), buttonPressed, RISING);
     digitalWrite(LED2, HIGH);
-    delay(500);  // LED stays on for 0.75 second
+    delay(gameSpeed);  // LED stays on for 0.75 second
     digitalWrite(LED2, LOW);
     detachInterrupt(digitalPinToInterrupt(3));
   }
@@ -123,7 +125,7 @@ void light_LED(int LED_num) {
     attachInterrupt(digitalPinToInterrupt(2), buttonPressed, RISING);
     attachInterrupt(digitalPinToInterrupt(3), buttonPressed, RISING);
     digitalWrite(LED3, HIGH);
-    delay(500);  // LED stays on for 0.75 second
+    delay(gameSpeed);  // LED stays on for 0.75 second
     digitalWrite(LED3, LOW);
     detachInterrupt(digitalPinToInterrupt(2));
     detachInterrupt(digitalPinToInterrupt(3));
